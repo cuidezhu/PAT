@@ -18,23 +18,22 @@
 #include <iostream>
 using namespace std;
 
-
 int main() {
-	int n;
-	int times = 0;
-	cin >> n;
-	
-	while (n != 1) {
-		if (n % 2 == 0) {
-			n = n / 2;
-			times += 1;
-		} else {
-			n = (3 * n + 1) / 2;
-			times += 1;
-		}
-	}
+  int n;
+  int times = 0;
+  cin >> n;
 
-	cout << times;
+  while (n != 1) {
+    if (n % 2 == 0) {
+      n = n / 2;
+      times += 1;
+    } else {
+      n = (3 * n + 1) / 2;
+      times += 1;
+    }
+  }
 
-	return 0;
+  cout << times;
+
+  return 0;
 }
